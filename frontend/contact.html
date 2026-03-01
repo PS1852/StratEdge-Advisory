@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact StratEdge Advisory. Schedule a consultation with our London partners.">
+    <title>Contact Us | StratEdge Advisory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-container {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .checkbox-group input {
+            margin-top: 0.3rem;
+        }
+
+        .checkbox-group label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.4;
+        }
+
+        .contact-info {
+            padding: 3rem;
+            background: var(--primary-color);
+            color: #fff;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .contact-info h3 {
+            color: #fff;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .info-item h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-item p {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: rgba(10, 25, 47, 0.98);">
+        <div class="nav-container">
+            <a href="index.html" class="logo">STRAT<span>EDGE</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="btn btn-outline active">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section bg-light" style="padding-top: 150px; padding-bottom: 50px;">
+        <div class="container text-center fade-in-up">
+            <h1 class="section-title">Initiate Dialogue</h1>
+            <div class="title-underline center"></div>
+            <p class="section-subtitle">Connect with our senior partners to explore how we can accelerate your strategic
+                agenda.</p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container dual-col" style="align-items: stretch;">
+
+            <div class="contact-info slide-in-left">
+                <h3>Global Headquarters</h3>
+
+                <div class="info-item">
+                    <h4>London Office</h4>
+                    <p>1 Canada Square, Canary Wharf<br>London E14 5AB, United Kingdom</p>
+                </div>
+
+                <div class="info-item">
+                    <h4>Direct Inquiries</h4>
+                    <p><a href="mailto:stratedgeadvisory@gmail.com" style="color: #fff;">stratedgeadvisory@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h4>Executive Switchboard</h4>
+                    <p><a href="tel:+442055500191" style="color: #fff;">+44 20 5550 0191</a></p>
+                </div>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 0.9rem; color: #ccd6f6;">Consultations are strictly confidential and typically
+                        engaged at the C-suite and Board level.</p>
+                </div>
+            </div>
+
+            <div class="form-container slide-in-right">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Corporate Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="john.doe@company.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company" class="form-label">Company / Organization</label>
+                        <input type="text" id="company" name="company" class="form-control" required
+                            placeholder="Enterprise Corp Ltd.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inquiry" class="form-label">Nature of Inquiry</label>
+                        <select id="inquiry" name="inquiry" class="form-control" required>
+                            <option value="">Select an area of interest...</option>
+                            <option value="corporate-strategy">Corporate Strategy</option>
+                            <option value="mna-advisory">M&A Advisory</option>
+                            <option value="operational-excellence">Operational Excellence</option>
+                            <option value="digital-transformation">Digital Transformation</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message Details (Optional)</label>
+                        <textarea id="message" name="message" class="form-control" rows="4"
+                            placeholder="Briefly describe your strategic imperative..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to having StratEdge Advisory collect my details via this form. I
+                            understand my data will be handled in accordance with GDPR requirements and the firm's
+                            privacy policy purely for responding to this inquiry.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: var(--text-light);">
+                        Secured via SSL Encryption</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Footer Content Omitted for Brevity but consistent -->
+        <div class="footer-bottom" style="border-top: none; text-align: center; padding: 2rem 0;">
+            <p>&copy; 2026 StratEdge Advisory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
