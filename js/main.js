@@ -54,7 +54,7 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Sending...';
@@ -62,9 +62,9 @@ if (contactForm) {
 
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData.entries());
-        
+
         // Consent validation is handled by HTML5 required attribute
-        if(!data.consent) {
+        if (!data.consent) {
             alert('Please agree to the privacy policy to submit.');
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
@@ -72,16 +72,19 @@ if (contactForm) {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(data),
-            });
+            // In a real environment with a backend, we would use:
+            // const response = await fetch('https://your-backend.com/api/contact', { ... });
 
-            if (response.ok) {
-                alert('Thank you for reaching out. A senior partner will contact you shortly.');
+            // For this live GitHub demo, we simulate a premium API interaction
+            await new Promise(resolve => setTimeout(resolve, 1500)); // Artificial delay for realism
+
+            console.log('Form Data Received:', data);
+
+            // Simulating a successful response
+            const success = true;
+
+            if (success) {
+                alert('Thank you for reaching out. A senior partner from our London office will contact you shortly.');
                 contactForm.reset();
             } else {
                 alert('There was a problem sending your message. Please try again later.');
